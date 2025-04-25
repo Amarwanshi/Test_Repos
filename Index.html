@@ -2,104 +2,180 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Svastika - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws on Wheels - Mobile Pet Grooming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
     }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px 0;
+    nav {
+      background-color: #f8f9fa;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1598133894007-2b21fd6b60e3') no-repeat center center/cover;
+      color: white;
       text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: #fff;
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
     }
-    h1, h2, h3 {
-      color: #333;
+    .gallery-img {
+      height: 200px;
+      object-fit: cover;
     }
-    .section {
-      margin-bottom: 30px;
-    }
-    .section h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .contact a {
-      color: #007BFF;
-      text-decoration: none;
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Svastika</h1>
-    <p>Web Developer | Designer | Problem Solver</p>
-  </header>
 
-  <div class="container">
-    <section class="section contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">Svastika.jnv@gmail.com</a></p>
-      <p>Phone: 080-26998867</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/Svastika</a></p>
-      <p>GitHub: <a href="#">github.com/Svastika</a></p>
-    </section>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Paws on Wheels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section class="section">
-      <h2>Summary</h2>
-      <p>Detail-oriented web developer with 3+ years of experience building responsive websites and web apps. Skilled in HTML, CSS, JavaScript, and modern frameworks.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Mobile Grooming, Happy Pets</h1>
+      <p class="lead">We bring the salon to your doorstep</p>
+      <a href="#booking" class="btn btn-primary btn-lg mt-3">Book Now</a>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React, Vue, Node.js</li>
-        <li>Git, GitHub, REST APIs</li>
-        <li>Responsive Design, Accessibility</li>
-      </ul>
-    </section>
+  <!-- Services -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4>Bath & Brush</h4>
+          <p>Gentle bathing and brushing with premium pet-safe products.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Haircut & Styling</h4>
+          <p>Custom cuts and styles to keep your furry friend looking fresh.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Nail Clipping</h4>
+          <p>Safe nail trims to keep your pet comfortable and healthy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Experience</h2>
-      <h3>Front-End Developer - Wipro</h3>
-      <p><em>Jan 2022 - Present</em></p>
-      <ul>
-        <li>Developed and maintained company website using React and SCSS</li>
-        <li>Collaborated with design team to implement responsive UI</li>
-        <li>Improved site performance by 30% through optimization techniques</li>
-      </ul>
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="text-center mb-4">Before & After</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1619983081563-cbfa183db47c" class="img-fluid gallery-img rounded" alt="Groomed dog 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" class="img-fluid gallery-img rounded" alt="Groomed dog 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1601758125946-6ec2e9ea0c72" class="img-fluid gallery-img rounded" alt="Groomed dog 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" class="img-fluid gallery-img rounded" alt="Groomed dog 4">
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h3>Web Developer Intern - Infosys</h3>
-      <p><em>May 2021 - Dec 2021</em></p>
-      <ul>
-        <li>Assisted in redesigning the internal dashboard application</li>
-        <li>Created reusable components and wrote unit tests</li>
-      </ul>
-    </section>
+  <!-- About -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">Paws on Wheels is a family-owned mobile grooming business serving local neighborhoods with love and care. Our certified groomers are passionate pet lovers who ensure every animal gets VIP treatment from the comfort of your driveway.</p>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Education</h2>
-      <p><strong>BS in Computer Science</strong> – Bangalore University, 2021</p>
-    </section>
-  </div>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p><strong>Phone:</strong> 080-26998867</p>
+          <p><strong>Email:</strong> Svastika.jnv@gmail.com</p>
+          <p><strong>Location:</strong> Vijayanagar, Chandralayout, and surrounding areas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Book an Appointment</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="pet" class="form-label">Pet Name</label>
+              <input type="text" class="form-control" id="pet" required>
+            </div>
+            <div class="mb-3">
+              <label for="service" class="form-label">Select Service</label>
+              <select class="form-select" id="service">
+                <option>Bath & Brush</option>
+                <option>Haircut & Styling</option>
+                <option>Nail Clipping</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Preferred Date</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Paws on Wheels. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
